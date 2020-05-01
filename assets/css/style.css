@@ -385,6 +385,18 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     font-size: 32px;
     color: var(--secondary-color);
     margin-bottom: 10px;
+    background: -webkit-linear-gradient(#F29015, #E31E25);
+    background: linear-gradient(#F29015, #E31E25);
+    background: -moz-linear-gradient(#F29015, #E31E25);
+    background: -o-linear-gradient(#F29015, #E31E25);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
 
 .sec-header p {
@@ -794,7 +806,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../images/bg-overlay.png) no-repeat center #032D5E;
+    background: url(../images/bg-overlay.png) no-repeat center #00B7FF;
     background-size: cover;
     opacity: .7;
 }
