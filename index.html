@@ -23,10 +23,90 @@
 
 <body>
 
+    <!-- Login Modal And register -->
+    <div class="modal fade login-register" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <ul class="nav nav-tabs nav-justified modal-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                aria-selected="true">
+                                <i class="fa fa-user fa-fw"></i>
+                                تسجيل دخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                aria-selected="false">
+                                <i class="fa fa-user-plus fa-fw"></i>
+                                تسجيل جديد</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form class="login">
+                                <figure>
+                                    <img src="assets/images/icons/undraw_authentication_fsn5.svg" alt="" title="" />
+                                </figure>
+                                <h4>تسجيل الدخول</h4>
+
+                                <div class="form-group">
+                                    <label for="loginEmail">البريد الإلكتروني</label>
+                                    <input type="email" id="loginEmail" name="" placeholder="Example@example.com" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="loginPassword">كلمة المرور</label>
+                                    <input type="password" id="loginPassword" name="" placeholder="*******" class="form-control" />
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fa fa-lock fa-fw"></i> تسجيل
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form class="login">
+                                <figure>
+                                    <img src="assets/images/icons/undraw_new_entries_nh3h.svg" alt="" title="" />
+                                </figure>
+                                <h4>إنضم إلينا</h4>
+                            
+                                <div class="form-group">
+                                    <label for="loginEmail">البريد الإلكتروني</label>
+                                    <input type="email" id="loginEmail" name="" placeholder="Example@example.com" class="form-control" />
+                                </div>
+                            
+                                <div class="form-group">
+                                    <label for="loginPassword">كلمة المرور</label>
+                                    <input type="password" id="loginPassword" name="" placeholder="*******" class="form-control" />
+                                </div>
+                            
+                                <div class="form-group text-center">
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fa fa-lock fa-fw"></i> تسجيل جديد
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal And register -->
+
     <!-- main-header -->
     <header class="main-header">
         <figure class="hero-image wow fadeInDown" data-wow-duration="1s" dir="ltr">
-            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1"
+            <img src="assets/images/slider.png" alt="" />
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1"
                 style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd; width: 1105px;"
                 viewBox="0 0 15801 10597" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
@@ -43,7 +123,7 @@
                     <image id="Shape_1_copy_2" x="-1592.94" y="0" width="500" height="9787.78"
                         data-name="Shape 1 copy 2" xlink:href="assets/images/slider.png" style="width: 15801px !important;height: 10597px !important;"></image>
                 </g>
-            </svg>
+            </svg> -->
         </figure>
         <nav class="navbar navbar-expand-lg navbar-light main-navigation">
             <div class="container-fluid">
@@ -86,7 +166,7 @@
                             <a class="nav-link" href="#">حولنا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target=".login-register">
                                 <i class="far fa-user-circle"></i>
                                 دخول</a>
                         </li>
@@ -97,7 +177,7 @@
 
         <section class="hero">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <h1>انضم إلى الآلاف الذين طبقوا مقياس "متم"</h1>
                         <p>
@@ -113,12 +193,12 @@
             </div>
         </section>
 
-        <a href="" class="btn downToggle"><i class="fas fa-chevron-down"></i></a>
+        <a href="#Testimonials" class="btn downToggle"><i class="fas fa-chevron-down"></i></a>
     </header>
     <!-- main-header -->
 
     <!-- testimonials -->
-    <section class="testimonials">
+    <section class="testimonials" id="Testimonials">
         <div class="container">
             <header class="sec-header">
                 <h4>اراء العملاء</h4>
@@ -441,6 +521,20 @@
         </div>
     </section>
     <!-- needs Motem -->
+    
+    <section class="parallax-image cover-background">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 text-center">
+                    <h4 class="text-white sm-margin-20px-bottom">ماذا تنتظر ...هيا انضم معنا الان</h4>
+                    <p class="text-white font-size16 xs-font-size14 margin-30px-bottom">إهلاً سهلا بك معناهنا </p>
+                    <a href="javascript:void(0)" class="btn btn-light" data-toggle="modal"
+                        data-target=".login-register"><span>إنضم إلينا</span></a>
+                </div>
+    
+            </div>
+        </div>
+    </section>
 
     <!-- news -->
     <section class="news">
@@ -520,7 +614,7 @@
 
     <!-- footer main -->
     <footer class="main-footer">
-        <div class="image-layer" style="background-image: url(assets/images/footer-bg-5.png);"></div>
+        <div class="image-layer" style="background-image: url(assets/images/footer-bg-52.png);"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -586,7 +680,7 @@
     <script src="assets/vendor/jquery.min.js"></script>
     <script src="assets/vendor/popper.min.js"></script>
     <script src="assets/vendor/bootstrap.min.js"></script>
-    <script src="assets/vendor/animate/wow.min.js"></script>
+    <script src="assets/libs/animate/wow.min.js"></script>
     <script src="assets/libs/owl/owl.carousel.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
