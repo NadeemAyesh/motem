@@ -16,6 +16,7 @@ $(document).ready(function () {
     $('.testi-slider .owl-carousel').owlCarousel({
         rtl: true,
         loop: true,
+        autoplay: true,
         margin: 15,
         responsiveClass: true,
         nav: false,
@@ -32,6 +33,11 @@ $(document).ready(function () {
                 items: 3,
             }
         }
+    });
+
+    $('.downToggle').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800);
     });
     
     // inialize animate WOW Js
