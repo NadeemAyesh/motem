@@ -39,6 +39,18 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 800);
     });
+
+    $('.menu-btn').on('click', function () {
+        if ($('.side-menu').hasClass('show')) {
+            $('.side-menu').removeClass('show');
+        } else {
+            $('.side-menu').addClass('show');
+        }
+
+        $('.close-menu').on('click', function () {
+            $('.side-menu').removeClass('show');
+        });
+    });
     
     // inialize animate WOW Js
     new WOW().init();

@@ -66,6 +66,67 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     border-color: var(--secondary-color);
 }
 
+/* side-menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #E31E25, #f7901e);
+    width: 0;
+    height: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transition: border-radius 1.2s ease,
+    width 0.6s ease-in-out,
+    height 0.6s ease-in-out,
+    opacity 0.3s linear;
+    opacity: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.side-menu.show {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 0;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: vaR(--danger);
+}
+
+.side-menu .nav {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.side-menu .nav a.nav-link {
+    color: #FFF;
+    font-size: 16px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    margin: 5px;
+    transition: var(--trans);
+}
+
+.side-menu .nav a:hover,
+.side-menu .nav a:focus {
+    background: #FFF !important;
+    color: vaR(--main-color) !important;
+}
+/* side-menu */
+
 /* Login Modal */
 .closeModal {
     position: absolute;
@@ -262,6 +323,13 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     opacity: 0;
 }
 
+.navbar-toggler {
+    color: #FFF !important;
+    border-color: #FFF !important;
+    width: 50px;
+    height: 40px;
+}
+
 .main-header .navbar-light .navbar-nav.white-text .nav-link:hover::before, .main-header .navbar-light .navbar-nav.white-text .nav-link:focus::before, .main-header .navbar-light .navbar-nav.white-text .nav-item span:hover::before, .main-header .navbar-light .navbar-nav.white-text .nav-item span:focus::before, .main-header .navbar-light .navbar-nav.white-text .active>.nav-link::before, .main-header .navbar-light .navbar-nav.white-text .nav-link.active::before, .main-header .navbar-light .navbar-nav.white-text .nav-link.show::before, .main-header .navbar-light .navbar-nav.white-text .show>.nav-link::before {
     opacity: 1;
     top: 70%;
@@ -345,11 +413,6 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     box-shadow: 0 5px 12px RGBA(0, 0, 0, .16);
     line-height: 1;
     font-size: 14px;
-    animation-name: bounce-1;
-    animation-timing-function: linear;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
 }
 
 /* main header */
@@ -1056,10 +1119,89 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 @media(max-width: 1200px) {}
 
-@media(max-width: 991px) {}
+@media(max-width: 991px) {
+    .logo-brand {
+        text-align: center;
+    }
+    .logo-brand img {
+        width: 70%;
+    }
 
-@media(max-width: 768px) {}
+    .footer-links,
+    .footer-news-letter {
+        margin-top: 20px;
+    }
+}
 
+@media(max-width: 768px) {
+    .hero-image {
+        display: none;
+    }
+
+    .navbar-toggler {
+        background: var(--secondary-color);
+    }
+
+    .hero {
+        text-align: center;
+        color: #FFF;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+    
+    .hero p{
+        color: #FFF;
+    }
+    
+    .hero p,
+    .sec-header p,
+    .value-item p {
+        font-size: 14px;
+    }
+
+    .sec-header h4 {
+        font-size: 22px;
+    }
+
+    .value-item h3,
+    .parallax-image h4,
+    .news-block-one .inner-box .lower-content h3 a {
+        font-size: 18px;
+    }
+
+    .about-image {
+        overflow: visible;
+    }
+
+    .main-header {
+        background: url(../images/slider.png) no-repeat center RGBA(0, 0, 0, .6);
+        background-size: cover;
+        background-blend-mode: multiply;
+        -webkit-clip-path: ellipse(100% 100% at 50% 0);
+        -moz-clip-path: ellipse(100% 100% at 50% 0);
+        -o-clip-path: ellipse(100% 100% at 50% 0);
+        clip-path: ellipse(100% 100% at 50% 0);
+    }
+
+    .main-navigation {
+        background: #FFF;
+    }
+
+    .downToggle {
+        bottom: 30px;
+    }
+
+    .logo-brand img {
+        width: 100%;
+    }
+
+    .footer-links,
+    .footer-news-letter {
+        text-align: center;
+    }
+}
 @media (max-width: 576px) {}
 
 /* Media query */
