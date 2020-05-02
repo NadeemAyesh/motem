@@ -283,15 +283,40 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     max-height: 100%;
     background: url(../images/triangels.svg) no-repeat center left;
     background-size: contain;
-    border-bottom-right-radius: 218px;
+    border-radius: 120px;
     overflow: hidden;
-    transform: rotate(15deg) translateX(-122px);
-    border-top-right-radius: 167px;
+    transform: translate(-35%, -28%) rotate(35deg);
     height: 100%;
     max-width: 50%;
     margin: 0;
     box-shadow: 30px 20px 30px RGBA(0, 0, 0, .16);
-    border: 20px solid var(--secondary-color);
+    -webkit-transform: translate(-35%, -28%) rotate(35deg);
+    -moz-transform: translate(-35%, -28%) rotate(35deg);
+    -ms-transform: translate(-35%, -28%) rotate(35deg);
+    -o-transform: translate(-35%, -28%) rotate(35deg);
+    -webkit-transform: translate(-35%, -28%) rotate(35deg);
+}
+
+.hero-image img {
+    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+
+.image-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    width: 50%;
+    height: auto;
+    max-height: 100%;
 }
 
 .hero-image img {
@@ -805,7 +830,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 .parallax-image {
     padding: 60px 0;
-    background: url(../images/welcom.jpg) no-repeat center fixed RGBA(0, 0, 0, .6);
+    background: url(../images/slider.png) no-repeat center fixed RGBA(0, 0, 0, .6);
     background-blend-mode: multiply;
     background-size: cover;
 }
