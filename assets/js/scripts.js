@@ -51,6 +51,10 @@ $(document).ready(function () {
             $('.side-menu').removeClass('show');
         });
     });
+
+    $('.need-item').on('hover', function () {
+        $(this).find('.need-text p').slideInDown();
+    });
     
     // inialize animate WOW Js
     new WOW().init();

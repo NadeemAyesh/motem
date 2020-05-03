@@ -309,12 +309,12 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     position: absolute;
     top: 0;
     left: 0;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    width: 50%;
+    -o-transform: rotate(180deg); */
+    width: 65%;
     height: auto;
     max-height: 100%;
 }
@@ -326,7 +326,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 }
 
 .main-header .navbar-brand img {
-    height: 60px;
+    height: 120px;
 }
 
 .main-header .navbar-light .navbar-nav.white-text .nav-link {
@@ -916,6 +916,15 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     font-size: 25px;
     color: #FFF;
     margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 60px;
 }
 
 .need-text h3 {
@@ -928,6 +937,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     color: #FFF;
     font-size: 14px;
     line-height: 1.6;
+    display: none;
 }
 
 /* needs-motem */
@@ -1069,11 +1079,13 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     display: block;
     color: #FFF;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .logo-brand img {
     filter: brightness(0) invert(1);
     -webkit-filter: brightness(0) invert(1);
+    height: 100px;
 }
 
 .social-nav {
