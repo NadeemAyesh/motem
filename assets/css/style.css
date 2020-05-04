@@ -327,6 +327,10 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     object-fit: cover;
 }
 
+.main-avatar {
+    display: none;
+}
+
 .main-header .navbar-brand img {
     height: 120px;
 }
@@ -1173,12 +1177,28 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 }
 
 @media(max-width: 768px) {
+    .main-header {
+        background: url(../images/testiback.png) no-repeat center left;
+    background-size: contain;
+    }
+
     .hero-image {
         display: none;
     }
 
     .image-header {
         width: 40%;
+        display: none;
+    }
+
+    .main-avatar {
+        display: block;
+        background: url(../images/hero-bg-shape-2.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .main-avatar img {
+        max-height: 200px;
     }
 
     .navbar-toggler {
