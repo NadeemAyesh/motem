@@ -307,7 +307,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 .image-header {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     /* transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -1161,7 +1161,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
         text-align: center;
     }
     .logo-brand img {
-        width: 70%;
+        max-width: 70%;
     }
 
     .footer-links,
@@ -1175,22 +1175,26 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
         display: none;
     }
 
+    .image-header {
+        width: 40%;
+    }
+
     .navbar-toggler {
         background: var(--secondary-color);
     }
 
     .hero {
         text-align: center;
-        color: #FFF;
+        /* color: #FFF; */
     }
 
     .hero h1 {
         font-size: 20px;
     }
     
-    .hero p{
+    /* .hero p{
         color: #FFF;
-    }
+    } */
     
     .hero p,
     .sec-header p,
@@ -1212,7 +1216,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
         overflow: visible;
     }
 
-    .main-header {
+    /* .main-header {
         background: url(../images/slider.png) no-repeat center RGBA(0, 0, 0, .6);
         background-size: cover;
         background-blend-mode: multiply;
@@ -1220,18 +1224,18 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
         -moz-clip-path: ellipse(100% 100% at 50% 0);
         -o-clip-path: ellipse(100% 100% at 50% 0);
         clip-path: ellipse(100% 100% at 50% 0);
-    }
+    } */
 
-    .main-navigation {
+    /* .main-navigation {
         background: #FFF;
-    }
+    } */
 
     .downToggle {
         bottom: 30px;
     }
 
     .logo-brand img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .footer-links,
