@@ -1156,6 +1156,169 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 }
 /* footer */
 
+/* inner-header */
+.inner-header {
+    height: auto;
+    background: url(../images/inner-header.png) no-repeat center bottom;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+.inner-header .main-navigation {
+    border-bottom: 1px solid RGBA(255, 255, 255, 0.3);
+}
+
+.page-title {
+    padding: 20px 0 30px 0;
+}
+
+.page-title h1 {
+    color: #FFF;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* inner-header */
+
+/* main-content */
+.main-content {
+    padding: 40px 0;
+    position: relative;
+    min-height: 70vh;
+    background: url(../images/testiback.png) no-repeat center;
+    background-size: cover;
+}
+
+
+#content_block_09 .content-box{
+	position: relative;
+}
+
+#content_block_09 .content-box #contact-form{
+	position: relative;
+	display: block;
+	background: #fff;
+	padding: 56px 40px 60px 40px;
+	border-radius: 5px;
+	box-shadow: 0 0px 50px rgba(2, 13, 49, 0.2);
+}
+
+#content_block_09 .content-box #contact-form:before{
+	position: absolute;
+	content: '';
+	background: #fff;
+	width: 100%;
+	height: calc(100% - 40px);
+	right: 20px;
+	top: 20px;
+	z-index: -1;
+	border-radius: 5px;
+	box-shadow: 0 0px 50px rgba(2, 13, 49, 0.2);
+}
+
+#content_block_09 .content-box #contact-form .form-group{
+	position: relative;
+	margin-bottom: 26px;
+}
+
+#content_block_09 .content-box #contact-form .form-group:last-child{
+	margin-bottom: 0px;
+}
+
+#content_block_09 .content-box #contact-form .form-group label{
+	position: relative;
+	display: block;
+	font-size: 16px;
+	color: #1d165c;
+	font-weight: 600;
+	margin-bottom: 13px;
+}
+
+#content_block_09 .content-box #contact-form .form-group label i{
+	font-size: 14px;
+	color: #7f7f7f;
+	margin-left: 10px;
+}
+
+#content_block_09 .content-box #contact-form .form-group input[type='text'],
+#content_block_09 .content-box #contact-form .form-group input[type='email'],
+#content_block_09 .content-box #contact-form .form-group textarea{
+	position: relative;
+	width: 100%;
+	height: 55px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-style: italic;
+	transition: all 500ms ease;
+}
+
+#content_block_09 .content-box #contact-form .form-group input:focus,
+#content_block_09 .content-box #contact-form .form-group textarea:focus{
+
+}
+
+#content_block_09 .content-box #contact-form .form-group textarea{
+	display: block;
+	height: 120px;
+	resize: none;
+	margin-bottom: 4px;
+}
+
+#content_block_09 .content-box #contact-form .form-group button{
+	display: block;
+	width: 100%;
+}
+
+.contact-section .image-box{
+	position: relative;
+	display: block;
+	margin: -40px -330px 0px 60px;
+}
+
+.contact-section .image-box img{
+	width: 100%;
+}
+
+.theme-btn{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700 !important;
+  color: #fff !important;
+  background: transparent;
+  padding: 7px 30px;
+  text-align: center;
+  cursor: pointer;
+  background-size: 200% auto;
+  border-radius: 5px;
+  z-index: 1;
+  transition: all 500ms ease;
+  border: none;
+}
+
+.theme-btn:hover{
+  background-position: right center;
+}
+
+.theme-btn.style-one{
+	background-image: linear-gradient(to right, var(--secondary-color) 0%, #2a5af9 50%, var(--secondary-color) 100%);
+}
+
+#content_block_09 .form-group .theme-btn.style-one {
+    padding: 12px 30px;
+}
+
+
+/* main-content */
+
 /* Media query */
 
 @media (min-width: 1366px) {}
@@ -1173,6 +1336,10 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     .footer-links,
     .footer-news-letter {
         margin-top: 20px;
+    }
+
+    #content_block_09 {
+        margin-bottom: 30px;
     }
 }
 
@@ -1263,6 +1430,13 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     .footer-links,
     .footer-news-letter {
         text-align: center;
+    }
+
+    .inner-header {
+        height: auto;
+        background: url(../images/inner-header.png) no-repeat center bottom;
+        background-size: cover;
+        padding-bottom: 100px;
     }
 }
 @media (max-width: 576px) {}
