@@ -274,6 +274,8 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     /* background: #FFF; */
     height: 100vh;
     position: relative;
+    background: url(../images/triangels.svg) no-repeat center left;
+    background-size: contain;
 }
 
 .hero-image {
@@ -307,8 +309,8 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 .image-header {
     position: absolute;
-    top: -1px;
-    left: 0;
+    top: -4px;
+    left: -1px;
     /* transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
