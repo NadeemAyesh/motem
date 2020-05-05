@@ -12,14 +12,14 @@
 /* Fonts Include */
 
 @font-face {
-    src: url("../fonts/ArbFONTS-GE_Dinar_One_Light.otf");
+    src: url("../fonts/Tajawal-Regular.ttf");
     font-family: "main";
 }
 
 /* bold Fonts */
 
 @font-face {
-    src: url("../fonts/Graphik-Arabic-SemiBold.otf");
+    src: url("../fonts/Tajawal-Bold.ttf");
     font-family: "bold";
 }
 
