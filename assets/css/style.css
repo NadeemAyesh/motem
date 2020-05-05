@@ -19,7 +19,7 @@
 /* bold Fonts */
 
 @font-face {
-    src: url("../fonts/ArbFONTS-GE-Dinar-Two-Medium_1E.otf");
+    src: url("../fonts/Graphik-Arabic-SemiBold.otf");
     font-family: "bold";
 }
 
@@ -268,17 +268,110 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 }
 /* Login Modal */
 
+/* toggle */
+/* Toggle CSS */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;  
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid #ccc;
+}
+
+.slider:before {
+  position: absolute;
+  content: attr(data-content) " ";  
+  height: 28px;
+  width: 45px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2ab934;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(95px);
+  -ms-transform: translateX(39px);
+  transform: translateX(39px);
+}
+
+/*------ ADDED CSS ---------*/
+.toggle-off
+{  /* display: none; */
+  top: 50%;
+  left: 15%;
+  margin-left: 10px;}
+
+  .toggle-on
+{
+  top: 50%;
+  left: 50%;
+  margin-left: 20px; }
+
+.toggle-on, .toggle-off
+{
+  color: black;
+  position: absolute;
+  transform: translate(-50%,-50%);  
+  font-size: 10px;
+  font-family: inherit;
+}
+
+.active:checked+ .slider .toggle-on
+{ /* display: block; */
+color: #2ab934 !important; }
+
+
+.inactive + .slider .toggle-off {  
+  color: #7a7878 !important;
+}
+
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round 
+{  border-radius: 50px;
+ }
+
+.slider.round:before 
+{  border-radius: 15px;  }
+/* toggle */
+
 /* main header */
 
 .main-header {
     /* background: #FFF; */
     height: 100vh;
     position: relative;
-    background: url(../images/triangels.svg) no-repeat center left;
-    background-size: contain;
+    /* background: url(../images/triangels.svg) no-repeat center left;
+    background-size: contain; */
 }
 
-.hero-image {
+/* .hero-image {
     position: absolute;
     top: -65px;
     left: 0;
@@ -307,6 +400,12 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     -o-transform: rotate(-35deg);
 }
 
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
 .image-header {
     position: absolute;
     top: -4px;
@@ -316,15 +415,17 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg); */
-    width: 65%;
+    width: 70%;
     height: auto;
     max-height: 100%;
+    background: url(../images/ss.svg) no-repeat top left;
+    background-size: contain;
+    height: 100%;
+    padding-right: 200px;
 }
 
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.image-header img {
+    max-height: 600px;
 }
 
 .main-avatar {
@@ -337,8 +438,12 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 .main-header .navbar-light .navbar-nav.white-text .nav-link {
     color: #FFF;
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
+}
+
+.main-header .navbar-light .navbar-nav.white-text .nav-link img {
+    margin-left: 5px;
 }
 
 .main-header .navbar-light .navbar-nav.white-text .nav-link::before, .main-header .navbar-light .navbar-nav.white-text .nav-item span::before {
@@ -352,6 +457,10 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     transform: translateX(-50%);
     transition: opacity 0.5s ease, top 0.3s ease-in-out;
     opacity: 0;
+    -webkit-transition: opacity 0.5s ease, top 0.3s ease-in-out;
+    -moz-transition: opacity 0.5s ease, top 0.3s ease-in-out;
+    -ms-transition: opacity 0.5s ease, top 0.3s ease-in-out;
+    -o-transition: opacity 0.5s ease, top 0.3s ease-in-out;
 }
 
 .navbar-toggler {
@@ -397,7 +506,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 }
 
 .hero h1 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -857,7 +966,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 .needs-motem {
     padding: 60px 0;
-    background: url(../images/triangels.svg) no-repeat center #F8FAFE;
+    background: #F8FAFE;
     background-size: cover;
     position: relative;
 }
@@ -886,6 +995,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     box-shadow: 0 5px 12px RGBA(0, 0, 0, .16);
     overflow: hidden;
     margin-bottom: 25px;
+    background-color: #FFF;
 }
 
 .need-item img {
@@ -900,7 +1010,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../images/bg-overlay.png) no-repeat center #00B7FF;
+    background: url(../images/bg-overlay.png) no-repeat center #0DAAE3;
     background-size: cover;
     opacity: .7;
 }
@@ -1147,7 +1257,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 .copy-rights {
     padding: 10px;
-    background: #251757;
+    background: #1B4E9B;
     margin-top: 40px;
 }
 
@@ -1159,17 +1269,23 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 /* inner-header */
 .inner-header {
     height: auto;
-    background: url(../images/inner-header.png) no-repeat center bottom;
+    background: url(../images/inner-header.svg) no-repeat center bottom;
     background-size: cover;
-    padding-bottom: 100px;
+    padding-bottom: 250px;
 }
 
 .inner-header .main-navigation {
     border-bottom: 1px solid RGBA(255, 255, 255, 0.3);
+    /* background-color: #FFF !important; */
+}
+
+.inner-header .navbar-brand img {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
 }
 
 .page-title {
-    padding: 20px 0 30px 0;
+    padding: 50px 0 30px 0;
 }
 
 .page-title h1 {
@@ -1197,6 +1313,18 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
 #content_block_09 .content-box{
 	position: relative;
+}
+
+.code-holder {
+    padding: 0 15px;
+    height: 55px;
+    background: #eaeaea;
+    color: #222;
+    font-size: 18px;
+    line-height: 55px;
+    margin-right: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 #content_block_09 .content-box #contact-form{
@@ -1341,12 +1469,21 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     #content_block_09 {
         margin-bottom: 30px;
     }
+
+    .image-header .d-table-cell {
+        vertical-align: top !important;
+    }
+
+    .image-header img {
+        margin-top: 100px;
+    }
 }
 
 @media(max-width: 768px) {
     .main-header {
         background: url(../images/testiback.png) no-repeat center left;
-    background-size: contain;
+        background-size: contain;
+        height: auto;
     }
 
     .hero-image {
@@ -1357,15 +1494,20 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
         width: 40%;
         display: none;
     }
+    
+    .hero {
+        padding-top: 0;
+        padding-right: 0 !important;
+    }
 
     .main-avatar {
         display: block;
-        background: url(../images/hero-bg-shape-2.svg) no-repeat center;
+        /* background: url(../images/hero-bg-shape-2.svg) no-repeat center; */
         background-size: contain;
     }
 
     .main-avatar img {
-        max-height: 200px;
+        max-height: 500px;
     }
 
     .navbar-toggler {
@@ -1434,7 +1576,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 
     .inner-header {
         height: auto;
-        background: url(../images/inner-header.png) no-repeat center bottom;
+        background: url(../images/inner-header.svg) no-repeat center bottom;
         background-size: cover;
         padding-bottom: 100px;
     }

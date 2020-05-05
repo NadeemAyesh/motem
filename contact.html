@@ -142,7 +142,18 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <label class="switch" style='top:15px;'>
+                                <input class='active' type="checkbox" checked>
+                                <!-- <input class='inactive' type="checkbox"  v-if="!edit.carrossel.ativo">
+                                                         <input class='inactive' type="checkbox"  v-if="disableToggle" disabled> -->
+                                <div class="slider round" @click="toggleSlider()">
+                                    <span class="toggle-on">عربي</span>
+                                    <span class="toggle-off">EN</span>
+                                </div>
+                            </label>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link lang-btn dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
                                     data-src="assets/images/icons/lang.svg" alt="اللغة" class="lozad" /></a>
@@ -156,7 +167,7 @@
                                 <a class="dropdown-item" href="#"><span
                                         class="flag-icon flag-icon-pl flag-icon-squared"></span> اللغة الإفتراضية</a>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                     <ul class="navbar-nav mr-auto white-text">
                         <li class="nav-item active">
@@ -224,6 +235,15 @@
                                         aria-required="true">
                                 </div>
                                 <div class="form-group">
+                                    <label><i class="fas fa-code"></i>كود التحقق</label>
+                                    <div class="d-flex">
+                                        <input type="text" name="code" placeholder="كود التحقق" required="" aria-required="true">
+                                        <div class="code-holder">
+                                            53#vfcR
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label><i class="fas fa-text-height"></i>الموضوع</label>
                                     <textarea name="message" placeholder="Message goes here"></textarea>
                                 </div>
@@ -236,8 +256,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <figure class="text-center mr-4">
-                        <img src="assets/images/illastration-6.png" alt="" class="img-fluid" />
+                    <figure class="text-center mr-5">
+                        <img src="assets/images/contact.svg" alt="" class="img-fluid" />
                     </figure>
                 </div>
             </div>
@@ -247,7 +267,7 @@
 
     <!-- footer main -->
     <footer class="main-footer">
-        <div class="image-layer" style="background-image: url(assets/images/footer-bg-52.png);"></div>
+        <div class="image-layer" style="background-image: url(assets/images/footer-2.svg);"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">

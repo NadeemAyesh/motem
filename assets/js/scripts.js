@@ -52,8 +52,11 @@ $(document).ready(function () {
         });
     });
 
-    $('.need-item').on('hover', function () {
-        $(this).find('.need-text p').slideInDown();
+    $('.need-item').on('mouseenter', function () {
+        $(this).find('.need-text p').slideDown();
+        $(this).on('mouseleave', function () {
+            $(this).find('.need-text p').slideUp();
+        });
     });
     
     // inialize animate WOW Js
