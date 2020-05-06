@@ -1373,7 +1373,7 @@ color: #2ab934 !important; }
 .copy-rights {
     padding: 10px;
     background: #05B0F3;
-    margin-top: 40px;
+    margin-top: 40px 0;
 }
 
 .copy-rights p {
