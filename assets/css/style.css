@@ -279,7 +279,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 }
 
 .login-register .modal-body {
-    background: url(../images/modal.png) no-repeat center;
+    /* background: url(../images/modal.png) no-repeat center; */
     background-size: cover;
 }
 
@@ -1397,7 +1397,7 @@ color: #2ab934 !important; }
 .inner-header .navbar-brand img {
     /* filter: brightness(0) invert(1);
     -webkit-filter: brightness(0) invert(1); */
-    height: 70px;
+    height: 90px;
 }
 
 .inner-header .navbar-light .navbar-nav.white-text .nav-link {
