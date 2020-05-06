@@ -24,22 +24,28 @@
 
 <body>
     <!-- Side menu -->
+    <div class="menu-overlay"></div>
     <aside class="side-menu">
-        <button class="close-menu btn btn-light">
-            <i class="fa fa-times fa-fw"></i>
-        </button>
 
-        <div class="d-table w-100 h-100">
-            <div class="d-table-cell" style="vertical-align: middle;">
-                <nav class="nav justify-content-center">
-                    <a class="nav-link" href="#slider">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#about">About Us</a>
-                    <a class="nav-link" href="#projects">News & Events</a>
-                    <a class="nav-link" href="#services">SERVICES</a>
-                    <a class="nav-link" href="#contact-us">Contact Us</a>
-                </nav>
-            </div>
-        </div>
+        <a class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu" data-tab-show="#profile">
+            <i class="fa fa-user-plus fa-fw"></i>
+            سجل الآن</a>
+            <hr>
+
+        <nav class="nav justify-content-center">
+            <a class="nav-link" href="#slider">الرئيسية <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">آراء العملاء</a>
+            <a class="nav-link" href="#projects">تواصل معنا</a>
+            <a class="nav-link" href="#services">الباقات</a>
+            <a class="nav-link" href="#contact-us">حولنا</a>
+            <!-- <a class="nav-link" href="#" data-toggle="modal" data-target=".login-register" data-close="menu">
+                <i class="far fa-user-circle"></i>
+                دخول</a> -->
+        </nav>
+        <hr>
+        <a href="" class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu" data-tab-show="#login">
+                <i class="far fa-user-circle"></i>
+                دخول</a>
     </aside>
     <!-- Side menu -->
 
@@ -90,6 +96,19 @@
                                 <div class="form-group text-center">
                                     <button type="button" class="btn btn-primary">
                                         <i class="fa fa-lock fa-fw"></i> تسجيل
+                                    </button>
+                                </div>
+
+                                <hr>
+
+                                <h4>أو قم بتسجيل الدخول من خلال</h4>
+                                <div class="buttons-login text-center">
+                                    <button class="loginBtn loginBtn--facebook">
+                                         فيس بوك
+                                    </button>
+                                    
+                                    <button class="loginBtn loginBtn--google">
+                                        جوجل
                                     </button>
                                 </div>
                             </form>
@@ -153,17 +172,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <label class="switch" style='top:15px;'>
-                                <input class='active' type="checkbox" checked>
+                                <input class='active' type="checkbox" checked> -->
                                 <!-- <input class='inactive' type="checkbox"  v-if="!edit.carrossel.ativo">
                                  <input class='inactive' type="checkbox"  v-if="disableToggle" disabled> -->
-                                <div class="slider round" @click="toggleSlider()">
+                                <!-- <div class="slider round" @click="toggleSlider()">
                                     <span class="toggle-on">عربي</span>
                                     <span class="toggle-off">EN</span>
                                 </div>
                             </label>
-                        </li>
+                        </li> -->
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link lang-btn dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
@@ -182,7 +201,7 @@
                     </ul>
                     <ul class="navbar-nav mr-auto white-text">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                            <!-- <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a> -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">آراء العملاء</a>
@@ -210,19 +229,21 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-7 fadeInUp wow animated" data-wow-duration="1.2s">
-                        <figure class="main-avatar">
-                            <img src="assets/images/2.svg" alt="" class="img-fluid" />
-                        </figure>
-                        <h1>انضم إلى الآلاف الذين طبقوا مقياس "متم"</h1>
-                        <p>
-                            انضم إلى الآلاف الذين طبقوا مقياس "متم" ، من أفراد ومدارس وجامعات , وتعرف على سماتك الشخصية
-                            والتخصصات والوظائف المناسبة لك والكثير
-                        </p>
-                        <a href="" class="btn btn-primary">سجل الآن</a>
-                        <p class="cpd">
-                            <img data-src="assets/images/cpd.jpg" alt="CPD" class="lozad" />
-                            الدولية CPD المنتج حاصل على عضوية
-                        </p>
+                        <div class="pl-4">
+                            <figure class="main-avatar">
+                                <img src="assets/images/2.svg" alt="" class="img-fluid" />
+                            </figure>
+                            <h1>انضم إلى الآلاف الذين طبقوا مقياس "متم"</h1>
+                            <p>
+                                انضم إلى الآلاف الذين طبقوا مقياس "متم" ، من أفراد ومدارس وجامعات , وتعرف على سماتك الشخصية
+                                والتخصصات والوظائف المناسبة لك والكثير
+                            </p>
+                            <a href="" class="btn btn-primary">سجل الآن</a>
+                            <p class="cpd">
+                                <img data-src="assets/images/cpd.jpg" alt="CPD" class="lozad" />
+                                الدولية CPD المنتج حاصل على عضوية
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -482,8 +503,11 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6 fadeInUp wow animated" data-wow-duration="1.2s">
                     <article class="need-item">
+                        <figure>
+                            <img src="assets/images/slider.png" alt="" />
+                        </figure>
                         <div class="need-text">
-                            <i class="fa fa-people-carry fa-fw"></i>
+                            <!-- <i class="fa fa-people-carry fa-fw"></i> -->
                             <h3>المستشارين</h3>
                             <p>
                                 يمكن للاستشاريين والمستشارين استخدام مقياس "متم" كأداة فعالة
@@ -494,8 +518,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow animated" data-wow-duration="1.2s">
                     <article class="need-item">
+                        <figure>
+                            <img src="assets/images/slider.png" alt="" />
+                        </figure>
                         <div class="need-text">
-                            <i class="fa fa-people-carry fa-fw"></i>
                             <h3>المستشارين</h3>
                             <p>
                                 يمكن للاستشاريين والمستشارين استخدام مقياس "متم" كأداة فعالة
@@ -506,8 +532,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow animated" data-wow-duration="1.2s">
                     <article class="need-item">
+                        <figure>
+                            <img src="assets/images/slider.png" alt="" />
+                        </figure>
                         <div class="need-text">
-                            <i class="fa fa-people-carry fa-fw"></i>
                             <h3>المستشارين</h3>
                             <p>
                                 يمكن للاستشاريين والمستشارين استخدام مقياس "متم" كأداة فعالة
@@ -518,8 +546,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow animated" data-wow-duration="1.2s">
                     <article class="need-item">
+                        <figure>
+                            <img src="assets/images/slider.png" alt="" />
+                        </figure>
                         <div class="need-text">
-                            <i class="fa fa-people-carry fa-fw"></i>
                             <h3>المستشارين</h3>
                             <p>
                                 يمكن للاستشاريين والمستشارين استخدام مقياس "متم" كأداة فعالة
@@ -530,8 +560,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow animated" data-wow-duration="1.2s">
                     <article class="need-item">
+                        <figure>
+                            <img src="assets/images/slider.png" alt="" />
+                        </figure>
                         <div class="need-text">
-                            <i class="fa fa-people-carry fa-fw"></i>
                             <h3>المستشارين</h3>
                             <p>
                                 يمكن للاستشاريين والمستشارين استخدام مقياس "متم" كأداة فعالة
@@ -542,8 +574,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 fadeInUp wow animated" data-wow-duration="1.2s">
                     <article class="need-item">
+                        <figure>
+                            <img src="assets/images/slider.png" alt="" />
+                        </figure>
                         <div class="need-text">
-                            <i class="fa fa-people-carry fa-fw"></i>
                             <h3>المستشارين</h3>
                             <p>
                                 يمكن للاستشاريين والمستشارين استخدام مقياس "متم" كأداة فعالة
@@ -661,13 +695,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <a href="" class="logo-brand">
+                    <!-- <a href="" class="logo-brand">
                         <img class="lozad" data-src="assets/images/logo.png" alt="" title="" class="img-fluid" />
-                    </a>
-                    <p>
+                    </a> -->
+                    <!-- <p>
                         هو مقياس صمم للمساعدة في التعرف على إمكانيات الأفراد بطريقة أفضل، وتوظيف ميولهم في المكان
                         المناسب دراسة أو عملاً
-                    </p>
+                    </p> -->
+                    <div class="footer-links">
+                        <h4>انتقالات سريعة</h4>
+                        <ul>
+                            <li><a href="">الرئيسية</a></li>
+                            <li><a href="">اراء العملاء</a></li>
+                            <li><a href="">الباقات</a></li>
+                            <li><a href="">حولنا</a></li>
+                            <li><a href="">تواصل معنا</a></li>
+                        </ul>
+                    </div>
                     <nav class="social-nav">
                         <a href=""><i class="fab fa-facebook-f fa-fw"></i></a>
                         <a href=""><i class="fab fa-twitter fa-fw"></i></a>
