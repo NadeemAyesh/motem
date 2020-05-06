@@ -1391,12 +1391,17 @@ color: #2ab934 !important; }
 
 .inner-header .main-navigation {
     border-bottom: 1px solid RGBA(255, 255, 255, 0.3);
-    /* background-color: #FFF !important; */
+    background-color: #FFF !important;
 }
 
 .inner-header .navbar-brand img {
-    filter: brightness(0) invert(1);
-    -webkit-filter: brightness(0) invert(1);
+    /* filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1); */
+    height: 70px;
+}
+
+.inner-header .navbar-light .navbar-nav.white-text .nav-link {
+    color: var(--secondary-color);
 }
 
 .page-title {
@@ -1421,7 +1426,7 @@ color: #2ab934 !important; }
     padding: 40px 0;
     position: relative;
     min-height: 70vh;
-    background: url(../images/testiback.png) no-repeat center;
+    /* background: url(../images/testiback.png) no-repeat center; */
     background-size: cover;
 }
 
