@@ -1371,9 +1371,9 @@ color: #2ab934 !important; }
 }
 
 .copy-rights {
-    padding: 10px;
+    padding: 10px 0;
     background: #05B0F3;
-    margin-top: 40px 0;
+    margin-top: 40px;
 }
 
 .copy-rights p {
