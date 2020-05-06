@@ -71,7 +71,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, var(--secondary-color) 0%, #2a5af9 50%);
+    background: linear-gradient(45deg, var(--secondary-color), #56C4EC);
     width: 0;
     height: 0;
     border-top-right-radius: 50%;
@@ -1071,6 +1071,7 @@ color: #2ab934 !important; }
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    height: 300px;
 }
 
 .news-block-one .inner-box .image-box i {
@@ -1099,7 +1100,9 @@ color: #2ab934 !important; }
 
 .news-block-one .inner-box .image-box img {
     width: 100%;
+    height: 100%;
     transition: all 500ms ease;
+    object-fit: cover;
 }
 
 .news-block-one:hover .inner-box .image-box img {
@@ -1248,7 +1251,7 @@ color: #2ab934 !important; }
 
 .copy-rights {
     padding: 10px;
-    background: #1B4E9B;
+    background: var(--secondary-color);
     margin-top: 40px;
 }
 
@@ -1276,13 +1279,13 @@ color: #2ab934 !important; }
 }
 
 .page-title {
-    padding: 70px 0 30px 0;
+    padding: 100px 0 30px 0;
 }
 
 .page-title h1 {
     color: #FFF;
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .page-title p {
@@ -1640,6 +1643,7 @@ color: #2ab934 !important; }
 
     .downToggle {
         bottom: 30px;
+        display: none;
     }
 
     .logo-brand img {
@@ -1668,6 +1672,15 @@ color: #2ab934 !important; }
 
     .main-footer {
         padding: 340px 0 0 0;
+    }
+
+    .hero p {
+        margin-top: 15px !important;
+    }
+
+    .testimonials::before,
+    .sec-values::before {
+        display: none !important;
     }
 }
 @media (max-width: 576px) {}
