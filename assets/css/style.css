@@ -1450,7 +1450,7 @@ box-shadow: 0px 0px 7px -3px rgba(0,0,0,0.75);
 .main-content {
     padding: 40px 0;
     position: relative;
-    min-height: 70vh;
+    min-height: 40vh;
     /* background: url(../images/testiback.png) no-repeat center; */
     background-size: cover;
 }
@@ -1672,7 +1672,7 @@ background: #FFF;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    border-bottom: 6px solid rgb(42,90,249);
+    border-bottom: 6px solid var(--secondary-color);
     /* padding-top: 20px; */
     /* padding-bottom: 20px; */
     box-shadow: 0 0 10px -2px #CCC;
@@ -1731,7 +1731,8 @@ background: #FFF;
     font-size: 18px;
     text-decoration: line-through !important;
     color: #E31E25;
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    display: block;
 }
 
 .price-table p {
@@ -1747,6 +1748,7 @@ background: #FFF;
     -o-border-radius: 25px;
     padding: 8px 30px;
     color: #FFF;
+    background-color: var(--secondary-color);
 }
 
 .main-content .news-block-one {
@@ -1816,8 +1818,8 @@ background: #FFF;
 
 /* Style the checkmark/indicator */
 .container-check .checkmark:after {
-  left: 9px;
-  top: 5px;
+  left: 10px;
+  top: 6px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -1825,6 +1827,42 @@ background: #FFF;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.morshed-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.morshed-item figure {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0 18px -1px rgb(0, 183, 255);
+}
+
+.morshed-item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.morshed-item h3 {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+.morshed-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3D464E;
 }
 /* main-content */
 
