@@ -79,7 +79,19 @@
                                     <img class="lozad" data-src="assets/images/icons/undraw_authentication_fsn5.svg"
                                         alt="" title="" />
                                 </figure>
-                                <h4>تسجيل الدخول</h4>
+                                <h4>سجل الدخول لحسابك</h4>
+
+                                <div class="buttons-login text-center mb-3">
+                                    <button class="loginBtn loginBtn--facebook">
+                                        فيس بوك
+                                    </button>
+                                
+                                    <button class="loginBtn loginBtn--google">
+                                        جوجل
+                                    </button>
+                                </div>
+                                
+                                <p class="text-center">أو</p>
 
                                 <div class="form-group">
                                     <label for="loginEmail">البريد الإلكتروني</label>
@@ -93,24 +105,14 @@
                                         class="form-control" />
                                 </div>
 
+                                <p><a href="">هل نسيت كلمة المرور؟</a></p>
+
                                 <div class="form-group text-center">
                                     <button type="button" class="btn btn-primary">
                                         <i class="fa fa-lock fa-fw"></i> تسجيل
                                     </button>
                                 </div>
-
-                                <hr>
-
-                                <h4>أو قم بتسجيل الدخول من خلال</h4>
-                                <div class="buttons-login text-center">
-                                    <button class="loginBtn loginBtn--facebook">
-                                         فيس بوك
-                                    </button>
-                                    
-                                    <button class="loginBtn loginBtn--google">
-                                        جوجل
-                                    </button>
-                                </div>
+                                
                             </form>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -119,7 +121,7 @@
                                     <img class="lozad" data-src="assets/images/icons/undraw_new_entries_nh3h.svg" alt=""
                                         title="" />
                                 </figure>
-                                <h4>إنضم إلينا</h4>
+                                <h4>أنشىء حسابك المجاني</h4>
 
                                 <div class="form-group">
                                     <label for="loginEmail">البريد الإلكتروني</label>
@@ -128,9 +130,43 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="loginName">إسم المستخدم</label>
+                                    <input type="text" id="loginName" name="" placeholder="الإسم مثل: علي و سامي .."
+                                        class="form-control" />
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="loginFullName">الإسم كاملاً</label>
+                                    <input type="text" id="loginFullName" name="" placeholder="الإسم مثل: علي و سامي .."
+                                        class="form-control" />
+                                </div>
+
+                                <div class="form-group">
                                     <label for="loginPassword">كلمة المرور</label>
                                     <input type="password" id="loginPassword" name="" placeholder="*******"
                                         class="form-control" />
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        أرسل لي عبر البريد الإلكتروني تحديثات المنصة، والدورات الموصى بها لي وآخر الأخبار.
+                                    </label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label class="form-check-label" for="defaultCheck2">
+                                        بالضغط على التسجيل أنا أوافق على شروط الخدمة و سياسة الخصوصية.
+                                    </label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                    <label class="form-check-label" for="defaultCheck3">
+                                        أوافق على أن عمري يتجاوز 12 عامًا
+                                    </label>
                                 </div>
 
                                 <div class="form-group text-center">
