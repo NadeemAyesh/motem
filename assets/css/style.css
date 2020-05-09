@@ -1677,6 +1677,7 @@ background: #FFF;
     /* padding-bottom: 20px; */
     box-shadow: 0 0 10px -2px #CCC;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .pakcage-title {
@@ -1863,6 +1864,24 @@ background: #FFF;
     font-size: 16px;
     line-height: 1.6;
     color: #3D464E;
+}
+
+.package-details table  {
+    text-align: center;
+}
+
+.package-details table tr td,
+.package-details table tr th {
+    padding: 5px !important;
+}
+
+.package-details table tr th {
+    font-size: 14px;
+}
+
+.package-details table tr td {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 /* main-content */
 
