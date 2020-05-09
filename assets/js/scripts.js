@@ -147,6 +147,11 @@ $(document).ready(function () {
 
         });
     });
+
+    $('.remove-item').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent().parent().fadeOut();
+    });
     
     
     // inialize animate WOW Js

@@ -1883,7 +1883,99 @@ background: #FFF;
     color: var(--secondary-color);
     font-weight: bold;
 }
+
+.table-title {
+    font-size: 18px;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.cart-table thead tr th:first-child {
+    width: 60px;
+    text-align: center;
+}
+
+.cart-table tbody tr td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart-table tbody tr td button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 0;
+}
+
+.cart-table thead tr th:last-child,
+.cart-table tbody tr td:last-child {
+    text-align: center;
+}
+
+.copun {
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+.copun h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.copun .form-control {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.copun button {
+    margin-right: 5px;
+    background-color: var(--secondary-color);
+}
+
+.action-btns {
+    margin-top: 20px;
+}
+
+.action-btns .btn {
+    padding: 6px 25px;
+}
+
+.action-btns .btn-primary {
+    background-color: var(--secondary-color);
+    margin-right: auto;
+}
+
+.btn-primary {
+    transition: all 800ms ease;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, var(--secondary-color) 0%, #1C79FB 50%, var(--secondary-color) 100%);
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+}
 /* main-content */
+
+/* .navbar-light .navbar-toggler */
+.inner-header .navbar-light .navbar-toggler {
+    border-color: var(--secondary-color) !important;
+    background-color: var(--secondary-color) !important;
+}
+/* .navbar-light .navbar-toggler */
 
 /* Media query */
 
