@@ -206,10 +206,24 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">حولنا</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle profile-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <!-- <figure><img src="assets/images/person_5.jpg" alt="" /></figure> -->
+                                إسم المستخدم
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target=".login-register">
-                                <i class="far fa-user-circle"></i>
-                                دخول</a>
+                            <a class="nav-link cart-link" href="#">
+                                <span>5</span>
+                                <img src="assets/images/icons/commerce.svg" alt="" title="" />
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -220,7 +234,7 @@
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-8">
-                        <h1>سلة المشتريات</h1>
+                        <h1>التسويق بالعمولة</h1>
                         <!-- <i class="fas fa-headphones"></i> -->
                         <p>نأخذ التزامنا تجاه مستخدمينا على محمل الجد اذا تحتاج أي مساعدة في حسابك
                             او لديك أسئلة عن كيفية استخدام المنصة وغيرها ، لاتتردد بالتواصل معنا</p>
@@ -234,102 +248,137 @@
     <!-- main page here -->
     <main class="main-content">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="table-responsive cart-table">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>إسم الباقة</th>
-                                    <th>السعر</th>
-                                    <th>الحذف</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="table-title">موهبة</td>
-                                    <td>152 ريال</td>
-                                    <td>
-                                        <button type="button" class="btn btn-outline-danger remove-item">
-                                            <i class="fa fa-times fa-fw"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="table-title">موهبة</td>
-                                    <td>152 ريال</td>
-                                    <td>
-                                        <button type="button" class="btn btn-outline-danger remove-item">
-                                            <i class="fa fa-times fa-fw"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="table-title">موهبة</td>
-                                    <td>152 ريال</td>
-                                    <td>
-                                        <button type="button" class="btn btn-outline-danger remove-item">
-                                            <i class="fa fa-times fa-fw"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <form class="user-form">
+                <div class="row">
+                    <div class="col-lg-3 col-md-8 mx-md-auto">
+                        <div class="right-profile">
+                            <figure><img src="assets/images/person_5.jpg" alt="" title="" /></figure>
+                            <h4>إسم المستخدم هنا</h4>
+                
+                            <a href="" class="btn btn-primary btn-block"><i class="fa fa-lock-open fa-fw"></i> تسجيل الخروج</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="table-responsive">
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-striped" style="border-radius: 10px; overflow: hidden;">
-                                <tbody>
-                                    <tr>
-                                        <th>الإجمالي</th>
-                                        <td class="total-price1">0 ريال سعودي</td>
-                                    </tr>
-                                    <tr>
-                                        <th>الكوبون</th>
-                                        <input type="hidden" name="coupon" id="coupon" value="10">
-                                        <td>10%</td>
-                                    </tr>
-                                    <tr>
-                                        <th>الإجمالي</th>
-                                        <td class="total-price2">0 ريال سعودي</td>
-                                    </tr>
-                                    <tr>
-                                        <th>ضريبة القيمة المضافة5%‫-‬مشمولة,الرقم الضريبي:3021455066193004</th>
-                                        <td>
-                                            <strong class="tax">0 ريال سعودي</strong>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <div class="col-lg-9">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light py-0 profile-nav">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa fa-bars fa-fw"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-item nav-link" href="#">الملف الشخصي <span class="sr-only">(current)</span></a>
+                                    <a class="nav-item nav-link" href="#">المقياس</a>
+                                    <a class="nav-item nav-link" href="#">الفواتير</a>
+                                    <a class="nav-item nav-link" href="#">الباقات</a>
+                                    <a class="nav-item nav-link" href="#">السلة</a>
+                                    <a class="nav-item nav-link active" href="#">التسويق بالعمولة</a>
+                                    <a class="nav-item nav-link" href="#">الدعم</a>
+                                </div>
+                            </div>
+                        </nav>
+                        
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>نوع الحساب</label>
+                                    <select name="" class="form-control">
+                                        <option value="">حساب بنكي</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label> الحساب</label>
+                                    <input type="text" name="" class="form-control" placeholder="" value="name102030" />
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>المبلغ ريال سعودي</label>
+                                    <input type="text" name="" class="form-control" placeholder="" value="0" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label>رابط التسويق</label>
+                                    <input type="url" name="" class="form-control" placeholder="" value="https://motem4u.com/register?marketing=356a192b7913b04c54574d18c28d46e6395428ab" />
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <hr>
+                                <h4 class="profile-title">عمليات السحب</h4>
+                                <div class="table-responsive taxes-table ">
+                                    <table class="table table-bordered table-hover table-striped" style="vertical-align: middle;" id="members-table">
+                                        <thead>
+                                            <tr class="bg-light">
+                                                <th>#</th>
+                                                <th>المبلغ (ريال سعودي)</th>
+                                                <th>التاريخ</th>
+                                                <th>الحالة</th>
+                                                <th class="text-center">التحكم</th>
+                                            </tr>
+                                        </thead>
+                                    
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    125
+                                                </td>
+                                                <td>5220 ريال</td>
+                                                <td>2020-03-27 03:45:14pm</td>
+                                                <td class="bg-success">تم الإستلام</td>
+                                                <td><a href="" class="btn btn-primary">عرض</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <hr>
+                                <h4 class="profile-title">الايرادات</h4>
+                                <div class="table-responsive taxes-table ">
+                                    <table class="table table-bordered table-hover table-striped" style="vertical-align: middle;" id="members-table">
+                                        <thead>
+                                            <tr class="bg-light">
+                                                <th>#</th>
+                                                <th>المبلغ (ريال سعودي)</th>
+                                                <th>التاريخ</th>
+                                            </tr>
+                                        </thead>
+                                    
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    125
+                                                </td>
+                                                <td>5220 ريال</td>
+                                                <td>2020-03-27 03:45:14pm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <hr>
+                                <h4 class="profile-title">سحب رصيد</h4>
+                                <div class="row align-items-end">
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <label> المبلغ ريال سعودي</label>
+                                            <input type="text" name="" class="form-control" placeholder="" value="15" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block withdraw-btn">سحب الرصيد</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="copun">
-                        <form method="" action="">
-                            <h4>الكوبون</h4>
-                            <div class="form-group d-flex align-items-center">
-                                <input type="text" name="" placeholder="" class="form-control" />
-                                <button type="submit" class="btn btn-primary">إستخدام</button>
-                            </div>
-                        </form>
-                        <a href="" class="btn btn-primary btn-block">الدفع بإستخدام الكوبون</a>
-                        <a href="" class="btn btn-primary btn-block">الدفع الإلكتروني</a>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="d-flex action-btns">
-                        <a href="" class="btn btn-primary text-white"><i class="fa fa-arrow-right fa-fw"></i> العودة للباقات</a>
-                        <a href="" class="btn btn-primary text-white continue-pay">إتمام عملية الدفع</a>
-                    </div>
-                </div>
-            </div>
+            </form>
             
         </div>
     </main>

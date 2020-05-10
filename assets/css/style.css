@@ -1950,7 +1950,7 @@ background: #FFF;
     padding: 6px 25px;
 }
 
-.action-btns .btn-primary {
+.action-btns .continue-pay {
     background-color: var(--secondary-color);
     margin-right: auto;
 }
@@ -1967,6 +1967,213 @@ background: #FFF;
 
 .btn-primary:hover {
     background-position: right center;
+}
+
+.alert.alert-info {
+    background-color: var(--secondary-color);
+    font-size: 18px;
+    color: #FFF;
+}
+
+.alert.alert-info p{
+    margin-bottom: 0;
+}
+
+.right-profile {
+    text-align: center;
+}
+
+.right-profile figure {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 18px -1px rgb(0, 183, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.right-profile figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-profile h4 {
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+.right-profile a {
+    margin-top: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 8px 25px;
+}
+
+.user-form .form-control {
+    height: 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: var(--secondary-color);
+}
+
+.user-form label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.user-form button.btn {
+    padding: 8px 35px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.profile-nav {
+    margin-bottom: 20px;
+}
+
+.profile-nav.navbar-light .navbar-nav .nav-link {
+    color: #222222;
+    font-size: 16px;
+    padding: 10px 12px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.profile-nav.navbar-light .navbar-nav .nav-link:hover,
+.profile-nav.navbar-light .navbar-nav .active > .nav-link,
+.profile-nav.navbar-light .navbar-nav .nav-link.active,
+.profile-nav.navbar-light .navbar-nav .nav-link.show,
+.profile-nav.navbar-light .navbar-nav .show > .nav-link {
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+.profile-nav.navbar-light .navbar-toggler {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color) !important;
+    padding: 6px 12px;
+    color: var(--secondary-color) !important;
+}
+
+.profile-link {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+}
+
+.profile-link figure {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.profile-link figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-link {
+    position: relative;
+}
+
+.cart-link img {
+    width: 30px;
+}
+
+.cart-link span {
+    width: 20px;
+    height: 20px;
+    color: #FFF;
+    background-color: var(--main-color);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    font-size: 14px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.taxes-table tbody tr {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+.taxes-table thead tr th:first-child,
+.taxes-table thead tr th:last-child,
+.taxes-table tbody tr td:first-child,
+.taxes-table tbody tr td:last-child  {
+    text-align: center;
+}
+
+.taxes-table tbody tr td:first-child {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.taxes-table tbody tr td {
+    vertical-align: middle;
+}
+
+.taxes-table tbody tr td[class*=bg-] {
+    color: #FFF;
+    text-align: center;
+}
+
+.user-form select {
+    appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+}
+
+.profile-title {
+    color: var(--secondary-color);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.withdraw-btn {
+    padding: 12px 20px !important;
 }
 /* main-content */
 
@@ -2020,6 +2227,14 @@ background: #FFF;
         margin-right: 0 !important;
         margin-bottom: 30px;
     }
+
+    .right-profile {
+        margin-bottom: 25px;
+    }
+
+    .main-footer .image-layer {
+        background-position: 30% top;
+    }
 }
 
 @media(max-width: 768px) {
@@ -2055,6 +2270,10 @@ background: #FFF;
 
     .navbar-toggler {
         background: var(--secondary-color);
+    }
+
+    .profile-nav.navbar-light .navbar-toggler {
+        background: none !important;
     }
 
     .hero {
