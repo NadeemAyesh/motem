@@ -152,6 +152,16 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).parent().parent().fadeOut();
     });
+
+    $('.minus-item').on('click', function () {
+        var val = parseInt($(this).parent().find('input').val()) ;
+        $(this).parent().find('input').val(val -= 1);
+    });
+
+    $('.plus-item').on('click', function () {
+        var val = parseInt($(this).parent().find('input').val()) ;
+        $(this).parent().find('input').val(val += 1);
+    });
     
     
     // inialize animate WOW Js

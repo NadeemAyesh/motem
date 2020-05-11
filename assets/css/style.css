@@ -2175,6 +2175,46 @@ background: #FFF;
 .withdraw-btn {
     padding: 12px 20px !important;
 }
+
+.quantity {
+    width: 230px;
+    text-align: center;
+}
+
+.quantity button {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.quantity input {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    color: var(--secondary-color);
+    text-align: center;
+    border: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: transparent !important;
+    font-family: Times, serif !important;
+    font-weight: bold;
+    direction: ltr;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 /* main-content */
 
 /* .navbar-light .navbar-toggler */
