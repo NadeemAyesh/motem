@@ -163,7 +163,11 @@ $(document).ready(function () {
         $(this).parent().find('input').val(val += 1);
     });
 
-    $('.js-example-basic-single').select2();
+    if ($('.js-example-basic-single').length > 0) {
+        $('.js-example-basic-single').select2();
+    }
+
+    
     
     
     // inialize animate WOW Js
