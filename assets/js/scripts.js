@@ -167,6 +167,10 @@ $(document).ready(function () {
         $('.js-example-basic-single').select2();
     }
 
+    if ($('.js-example-basic-single-no-search').length > 0) {
+        $('.js-example-basic-single-no-search').select2({ minimumResultsForSearch: -1 });
+    }
+
     
     
     

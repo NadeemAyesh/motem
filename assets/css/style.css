@@ -1923,6 +1923,7 @@ background: #FFF;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     background-color: #f7f7f7;
+    margin-bottom: 15px;
 }
 
 .copun h4 {
@@ -2067,7 +2068,7 @@ background: #FFF;
     color: #FFF !important;
     border-bottom-color: var(--main-color);
     background-color: var(--main-color);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .profile-nav.navbar-light .navbar-toggler {
@@ -2286,7 +2287,16 @@ input[type=number] {
 }
 
 .copun .d-flex > label {
-    flex: 0 0 50%;
+    margin-left: 10px;
+}
+
+.copun .d-flex > label img {
+    height: 30px;
+    /* border: 2px solid transparent; */
+}
+
+.container-rad input:checked ~ img {
+    border-color: var(--main-color) !important;
 }
 
 .complete-form {
@@ -2642,6 +2652,10 @@ input[type=number] {
     .testimonials::before,
     .sec-values::before {
         display: none !important;
+    }
+
+    .copun .d-flex > label {
+        margin-bottom: 25px;
     }
 }
 @media (max-width: 576px) {
