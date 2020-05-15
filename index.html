@@ -27,10 +27,11 @@
     <div class="menu-overlay"></div>
     <aside class="side-menu">
 
-        <a class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu" data-tab-show="#profile">
+        <a class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu"
+            data-tab-show="#profile">
             <i class="fa fa-user-plus fa-fw"></i>
             سجل الآن</a>
-            <hr>
+        <hr>
 
         <nav class="nav justify-content-center">
             <a class="nav-link" href="#slider">الرئيسية <span class="sr-only">(current)</span></a>
@@ -43,15 +44,16 @@
                 دخول</a> -->
         </nav>
         <hr>
-        <a href="" class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu" data-tab-show="#login">
-                <i class="far fa-user-circle"></i>
-                دخول</a>
+        <a href="" class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu"
+            data-tab-show="#login">
+            <i class="far fa-user-circle"></i>
+            دخول</a>
     </aside>
     <!-- Side menu -->
 
     <!-- Login Modal And register -->
-    <div class="modal fade login-register" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
+    <div class="modal fade login-register" id="login-register" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body p-0">
@@ -85,12 +87,12 @@
                                     <button class="loginBtn loginBtn--facebook">
                                         فيس بوك
                                     </button>
-                                
+
                                     <button class="loginBtn loginBtn--google">
                                         جوجل
                                     </button>
                                 </div>
-                                
+
                                 <p class="text-center">أو</p>
 
                                 <div class="form-group">
@@ -105,14 +107,15 @@
                                         class="form-control" />
                                 </div>
 
-                                <p><a href="">هل نسيت كلمة المرور؟</a></p>
+                                <p><a href="#" data-toggle="modal" data-target=".reset-modal" data-dismiss="modal">هل
+                                        نسيت كلمة المرور؟</a></p>
 
                                 <div class="form-group text-center">
                                     <button type="button" class="btn btn-primary">
                                         <i class="fa fa-lock fa-fw"></i> تسجيل
                                     </button>
                                 </div>
-                                
+
                             </form>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -151,7 +154,8 @@
                                 <div class="form-check mb-3">
                                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                     <label class="form-check-label" for="defaultCheck1">
-                                        أرسل لي عبر البريد الإلكتروني تحديثات المنصة، والدورات الموصى بها لي وآخر الأخبار.
+                                        أرسل لي عبر البريد الإلكتروني تحديثات المنصة، والدورات الموصى بها لي وآخر
+                                        الأخبار.
                                     </label>
                                 </div>
 
@@ -183,6 +187,37 @@
     </div>
     <!-- Login Modal And register -->
 
+    <!-- Modal -->
+    <div class="modal fade login-register reset-modal" id="exampleModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <form class="login">
+                        <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4>إستعادة كلمة المرور</h4>
+
+                        <div class="form-group">
+                            <label for="loginEmail">البريد الإلكتروني</label>
+                            <input type="email" id="loginEmail" name="" placeholder="Example@example.com"
+                                class="form-control" />
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button type="button" class="btn btn-light" data-dismiss="modal" aria-label="Close"
+                                data-target="#login-register" data-dismiss="modal">
+                                إغلاق
+                            </button>
+                            <button type="button" class="btn btn-primary">إرسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- main-header -->
     <header class="main-header">
         <figure class="image-header text-center">
@@ -211,9 +246,9 @@
                         <!-- <li class="nav-item">
                             <label class="switch" style='top:15px;'>
                                 <input class='active' type="checkbox" checked> -->
-                                <!-- <input class='inactive' type="checkbox"  v-if="!edit.carrossel.ativo">
+                        <!-- <input class='inactive' type="checkbox"  v-if="!edit.carrossel.ativo">
                                  <input class='inactive' type="checkbox"  v-if="disableToggle" disabled> -->
-                                <!-- <div class="slider round" @click="toggleSlider()">
+                        <!-- <div class="slider round" @click="toggleSlider()">
                                     <span class="toggle-on">عربي</span>
                                     <span class="toggle-off">EN</span>
                                 </div>
@@ -252,7 +287,7 @@
                             <a class="nav-link" href="#">حولنا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target=".login-register">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#login-register">
                                 <i class="far fa-user-circle"></i>
                                 دخول</a>
                         </li>
@@ -271,7 +306,8 @@
                             </figure>
                             <h1>انضم إلى الآلاف الذين طبقوا مقياس "متم"</h1>
                             <p>
-                                انضم إلى الآلاف الذين طبقوا مقياس "متم" ، من أفراد ومدارس وجامعات , وتعرف على سماتك الشخصية
+                                انضم إلى الآلاف الذين طبقوا مقياس "متم" ، من أفراد ومدارس وجامعات , وتعرف على سماتك
+                                الشخصية
                                 والتخصصات والوظائف المناسبة لك والكثير
                             </p>
                             <a href="" class="btn btn-primary">سجل الآن</a>
@@ -626,19 +662,19 @@
         </div>
     </section>
     <!-- needs Motem -->
-    
+
     <section class="parallax-image cover-background">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-9 text-center fadeInUp wow animated" data-wow-duration="1.2s">
-    
+
                     <h4 class="sm-margin-20px-bottom">ماذا تنتظر ...هيا انضم معنا الان</h4>
                     <p class="font-size16 xs-font-size14 margin-30px-bottom">أهلاً وسهلاً بكم معنا هنا </p>
                     <a href="javascript:void(0)" class="theme-btn style-one data-toggle=" modal"
                         data-target=".login-register"><span>إنضم إلينا</span></a>
-    
+
                 </div>
-    
+
             </div>
         </div>
     </section>
