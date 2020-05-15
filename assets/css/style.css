@@ -2897,6 +2897,16 @@ a.more-link {
 }
 /* .navbar-light .navbar-toggler */
 
+/* iti iti--allow-dropdown */
+.iti.iti--allow-dropdown {
+    width: 100%;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+    background: none !important;
+}
+/* iti iti--allow-dropdown */
+
 /* Media query */
 
 @media (min-width: 1366px) {}

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/libs/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="assets/libs/pickadate.js-master/lib/compressed/themes/default.css" />
     <link rel="stylesheet" href="assets/libs/pickadate.js-master/lib/compressed/themes/default.date.css" />
+    <link rel="stylesheet" href="assets/libs/inputCountry/build/css/intlTelInput.min.css" />
     <link rel="stylesheet" href="assets/css/style.css?v=1.0">
 
 </head>
@@ -268,15 +269,15 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="form-group">
                                     <label>رقم الجوال</label>
-                                    <div class="d-flex align-items-center mobile-num">
-                                        <input type="number" name="" placeholder="" class="form-control" />
-                                        <select name="" class="form-control js-example-basic-single">
+                                    <div  dir="ltr">
+                                        <input type="number" name="" placeholder="" class="form-control" id="telephone" />
+                                        <!-- class="d-flex align-items-center " mobile-num <select name="" class="form-control js-example-basic-single">
                                             <option value="">+972</option>
                                             <option value="">+972</option>
                                             <option value="">+972</option>
                                             <option value="">+972</option>
                                             <option value="">+972</option>
-                                        </select>
+                                        </select> -->
                                     </div>
                                 </div>
                             </div>
@@ -435,6 +436,18 @@
                 selectYears: true
             });
         })
+    </script>
+    <script src="assets/libs/inputCountry/build/js/intlTelInput-jquery.min.js"></script>
+    <script>
+        $("#telephone").intlTelInput({
+            // the countries at the top of the list. defaults to united states and united kingdom
+            preferredCountries: ["sa", "ps"],
+
+            initialCountry: "sa",
+
+            // display the country dial code next to the selected flag so it's not part of the typed number
+            separateDialCode: false,
+        });
     </script>
     <script src="assets/js/scripts.js"></script>
 </body>
