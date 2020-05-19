@@ -1,0 +1,534 @@
+<!doctype html>
+
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>The Title</title>
+    <!-- Required meta tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="" />
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/libs/animate/animate.css">
+    <link rel="stylesheet" href="assets/libs/flag-icon-css-master/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/libs/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.0">
+
+</head>
+
+<body>
+    <!-- Side menu -->
+    <div class="menu-overlay"></div>
+    <aside class="side-menu">
+
+        <a class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu"
+            data-tab-show="#profile">
+            <i class="fa fa-user-plus fa-fw"></i>
+            سجل الآن</a>
+        <hr>
+
+        <nav class="nav justify-content-center">
+            <a class="nav-link" href="#slider">الرئيسية <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">آراء العملاء</a>
+            <a class="nav-link" href="#projects">تواصل معنا</a>
+            <a class="nav-link" href="#services">الباقات</a>
+            <a class="nav-link" href="#contact-us">حولنا</a>
+            <!-- <a class="nav-link" href="#" data-toggle="modal" data-target=".login-register" data-close="menu">
+                    <i class="far fa-user-circle"></i>
+                    دخول</a> -->
+        </nav>
+        <hr>
+        <a href="" class="btn btn-block test-btn" data-toggle="modal" data-target=".login-register" data-close="menu"
+            data-tab-show="#login">
+            <i class="far fa-user-circle"></i>
+            دخول</a>
+    </aside>
+    <!-- Side menu -->
+
+    <!-- Login Modal And register -->
+    <div class="modal fade login-register" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <ul class="nav nav-tabs nav-justified modal-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">
+                                <i class="fa fa-user fa-fw"></i>
+                                تسجيل دخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">
+                                <i class="fa fa-user-plus fa-fw"></i>
+                                تسجيل جديد</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form class="login">
+                                <figure>
+                                    <img class="lozad" data-src="assets/images/icons/undraw_authentication_fsn5.svg"
+                                        alt="" title="" />
+                                </figure>
+                                <h4>تسجيل الدخول</h4>
+
+                                <div class="form-group">
+                                    <label for="loginEmail">البريد الإلكتروني</label>
+                                    <input type="email" id="loginEmail" name="" placeholder="Example@example.com"
+                                        class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="loginPassword">كلمة المرور</label>
+                                    <input type="password" id="loginPassword" name="" placeholder="*******"
+                                        class="form-control" />
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fa fa-lock fa-fw"></i> تسجيل
+                                    </button>
+                                </div>
+
+                                <hr>
+
+                                <h4>أو قم بتسجيل الدخول من خلال</h4>
+                                <div class="buttons-login text-center">
+                                    <button class="loginBtn loginBtn--facebook">
+                                        فيس بوك
+                                    </button>
+
+                                    <button class="loginBtn loginBtn--google">
+                                        جوجل
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form class="login">
+                                <figure>
+                                    <img class="lozad" data-src="assets/images/icons/undraw_new_entries_nh3h.svg" alt=""
+                                        title="" />
+                                </figure>
+                                <h4>إنضم إلينا</h4>
+
+                                <div class="form-group">
+                                    <label for="loginEmail">البريد الإلكتروني</label>
+                                    <input type="email" id="loginEmail" name="" placeholder="Example@example.com"
+                                        class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="loginPassword">كلمة المرور</label>
+                                    <input type="password" id="loginPassword" name="" placeholder="*******"
+                                        class="form-control" />
+                                </div>
+
+                                <div class="form-group text-center">
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fa fa-lock fa-fw"></i> تسجيل جديد
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal And register -->
+
+    <!-- main-header -->
+    <header class="main-header inner-header">
+        <nav class="navbar navbar-expand-lg navbar-light main-navigation fadeInUp wow animated"
+            data-wow-duration="1.2s">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo-inner.png" alt="Logo" title="المرشد لوجو وشعار المنتج" />
+                </a>
+                <button class="navbar-toggler menu-btn" type="button">
+                    <i class="fa fa-align-left fa-fw"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                                        <label class="switch" style='top:15px;'>
+                                            <input class='active' type="checkbox" checked> -->
+                        <!-- <input class='inactive' type="checkbox"  v-if="!edit.carrossel.ativo">
+                                             <input class='inactive' type="checkbox"  v-if="disableToggle" disabled> -->
+                        <!-- <div class="slider round" @click="toggleSlider()">
+                                                <span class="toggle-on">عربي</span>
+                                                <span class="toggle-off">EN</span>
+                                            </div>
+                                        </label>
+                                    </li> -->
+                        <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link lang-btn dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                                data-src="assets/images/icons/lang.svg" alt="اللغة" class="lozad" /></a>
+            
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-sa flag-icon-squared"></span> عربي</a>
+                                            <a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-gb flag-icon-squared"></span> صيني</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#"><span
+                                                    class="flag-icon flag-icon-pl flag-icon-squared"></span> اللغة الإفتراضية</a>
+                                        </div>
+                                    </li> -->
+                    </ul>
+                    <ul class="navbar-nav mr-auto white-text">
+                        <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">آراء العملاء</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">الباقات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">حولنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target=".login-register">
+                                <i class="far fa-user-circle"></i>
+                                دخول</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-title">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1>صفحة الإختبار</h1>
+                        <!-- <i class="fas fa-headphones"></i> -->
+                        <p>نأخذ التزامنا تجاه مستخدمينا على محمل الجد اذا تحتاج أي مساعدة في حسابك
+                            او لديك أسئلة عن كيفية استخدام المنصة وغيرها ، لاتتردد بالتواصل معنا</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-header -->
+
+    <!-- main page here -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- Modal -->
+            <div class="modal fade exam-text-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close closeModal" data-dismiss="modal" aria-label="Close">
+                                &times;
+                            </button>
+                            <p>
+                                لنتائج انعكاس لإجاباتك , بقدر ما تكون دقيق في الإجابات ستجد التقارير بنفس الدقة , لذلك حاول قدر استطاعتك أن تجيب بدقة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info fade show">
+                <button type="button" class="close text-light" data-dismiss="alert">×</button>
+                <strong>
+                    النتائج انعكاس لإجاباتك , بقدر ما تكون دقيق في الإجابات ستجد التقارير بنفس الدقة , لذلك حاول قدر استطاعتك أن
+                    تجيب بدقة.
+                    <br>
+                    يمكنك ايقاف المقياس و استكماله لاحقا خلال 7 أيام فقط دون الحاجة إلى القيام بأي إجراء للإيقاف , جميع المدخلات
+                    تخزن تلقائياَ.
+                    <br>
+                    التقييم 5 يشير إلى تطابق السلوك المذكور مع سلوكك.
+                    <br>
+                    التقييم 1 يشير إلى اختلاف سلوكك كليا عن السلوك المذكور.
+                    <br>
+                    التقييم (2 أو 3 أو 4) يشير إلى التقارب أو التباعد النسبي مع السلوك المذكور.
+                    <br>
+                    <br>
+            
+            
+                    <div class="text-center lead exam-counter" data-action="https://motem4u.com/exam/count">الوقت المتبقي لإنهاء
+                        المقياس: 4 يوم/أيام 07 ساعة/ساعات 16 دقيقة/دقائق 27 ثانية/ثواني </div>
+                    <input type="hidden" name="exam_start" value="2020-05-16 02:23:22pm">
+                </strong>
+            </div>
+            <div class="exam-question card">
+                <div class="card-header">
+                    <h4>عنوان السؤال هنا بشكل جيد ليس لشي وانما للسؤال 
+                        <a data-fancybox href="#myAudio" data-toggle="tooltip" data-placement="top" title="تشغيل المقطع"><i
+                                class="fa fa-play-circle fa-fw"></i></a>
+                    </h4>
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex">
+                        <label class="container-rad">
+                            الخيار االأول
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-rad">
+                            الخيار الثاني
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="exam-question card">
+                <div class="card-header">
+                    <h4>عنوان السؤال هنا بشكل جيد ليس لشي وانما للسؤال 
+                        <a data-fancybox href="#myVideo" data-toggle="tooltip" data-placement="top" title="تشغيل المقطع"><i
+                                class="fa fa-play-circle fa-fw"></i></a>
+                        <a href="#" data-toggle="modal" data-target=".exam-text-modal" data-toggle="tooltip" data-placement="top" title="نص السؤال"><i
+                                class="fa fa-file fa-fw"></i></a>
+                    </h4>
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex">
+                        <label class="container-rad">
+                            الخيار االأول
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-rad">
+                            الخيار الثاني
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-rad">
+                            الخيار الثاني
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-rad">
+                            الخيار الثاني
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="exam-question card">
+                <div class="card-header">
+                    <h4>عنوان السؤال هنا بشكل جيد ليس لشي وانما للسؤال 
+                        <a data-fancybox href="#myVideo" data-toggle="tooltip" data-placement="top" title="تشغيل المقطع"><i
+                                class="fa fa-play-circle fa-fw"></i></a>
+                        <a href="#" data-toggle="modal" data-target=".exam-text-modal" data-toggle="tooltip" data-placement="top" title="نص السؤال"><i
+                                class="fa fa-file fa-fw"></i></a>
+                    </h4>
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex">
+                        <label class="container-rad">
+                            <ul class="d-inline-flex list-unstyled circles">
+                                <li class="c-circle"></li>
+                                <li class="c-circle"></li>
+                                <li class="c-circle"></li>
+                                <li class="text">&nbsp; أو&nbsp; </li>
+                                <li class="c-square"></li>
+                                <li class="c-square"></li>
+                                <li class="c-square"></li>
+                            </ul>
+                            
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-rad">
+                            الخيار الثاني
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="exam-question card">
+                <div class="card-header">
+                    <h4>عنوان السؤال هنا بشكل جيد ليس لشي وانما للسؤال 
+                        <a data-fancybox href="#myVideo" data-toggle="tooltip" data-placement="top" title="تشغيل المقطع"><i
+                                class="fa fa-play-circle fa-fw"></i></a>
+                        <a href="#" data-toggle="modal" data-target=".exam-text-modal" data-toggle="tooltip" data-placement="top" title="نص السؤال"><i
+                                class="fa fa-file fa-fw"></i></a>
+                    </h4>
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex">
+                        <label class="container-rad">
+                            <ul class="d-inline-flex list-unstyled circles">
+                                <li class="c-circle"></li>
+                            </ul>
+                            
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-rad">
+                            <img src="assets/images/icons/plain-triangle.svg" alt="" title="" width="40px" height="40px" />
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="exam-question card">
+                <div class="card-header">
+                    <h4>عنوان السؤال هنا بشكل جيد ليس لشي وانما للسؤال 
+                        <a data-fancybox href="#myVideo" data-toggle="tooltip" data-placement="top" title="تشغيل المقطع"><i
+                                class="fa fa-play-circle fa-fw"></i></a>
+                        <a href="#" data-toggle="modal" data-target=".exam-text-modal" data-toggle="tooltip" data-placement="top" title="نص السؤال"><i
+                                class="fa fa-file fa-fw"></i></a>
+                    </h4>
+                </div>
+
+                <div class="card-body">
+                    <div class="d-flex">
+                        <label class="container-rad">
+                            <figure class="q-image rad"><img src="assets/images/person_5.jpg" alt="" /></figure>
+                            
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-rad">
+                            <figure class="q-image"><img src="assets/images/person_5.jpg" alt="" /></figure>
+                            <input type="radio" name="radio2">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="" class="btn btn-light">السابق</a>
+                <a href="" class="btn btn-primary">التالي</a>
+            </div>
+            
+            <video width="640" height="320" controls id="myVideo" style="display:none;">
+                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+                Your browser doesn't support HTML5 video tag.
+            </video>
+            
+            <audio width="300" height="100" controls id="myAudio" style="display:none;">
+                <source src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </main>
+    <!-- main page here -->
+
+    <!-- footer main -->
+    <footer class="main-footer">
+        <div class="image-layer" style="background-image: url(assets/images/footer.svg);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- <a href="" class="logo-brand">
+                        <img class="lozad" data-src="assets/images/logo.png" alt="" title="" class="img-fluid" />
+                    </a> -->
+                    <!-- <p>
+                        هو مقياس صمم للمساعدة في التعرف على إمكانيات الأفراد بطريقة أفضل، وتوظيف ميولهم في المكان
+                        المناسب دراسة أو عملاً
+                    </p> -->
+                    <div class="footer-links">
+                        <h4>انتقالات سريعة</h4>
+                        <ul>
+                            <li><a href="">الرئيسية</a></li>
+                            <li><a href="">اراء العملاء</a></li>
+                            <li><a href="">الباقات</a></li>
+                            <li><a href="">حولنا</a></li>
+                            <li><a href="">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <nav class="social-nav">
+                        <a href=""><i class="fab fa-facebook-f fa-fw"></i></a>
+                        <a href=""><i class="fab fa-twitter fa-fw"></i></a>
+                        <a href=""><i class="fab fa-instagram fa-fw"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in fa-fw"></i></a>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-links">
+                        <h4>انتقالات سريعة</h4>
+                        <ul>
+                            <li><a href="">الرئيسية</a></li>
+                            <li><a href="">اراء العملاء</a></li>
+                            <li><a href="">الباقات</a></li>
+                            <li><a href="">حولنا</a></li>
+                            <li><a href="">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-links">
+                        <h4>الإرشادات</h4>
+                        <ul>
+                            <li><a href="">ارشاد فرد</a></li>
+                            <li><a href="">إرشاد مدرب أو وليي أمر</a></li>
+                            <li><a href=""> إرشاد منظمة</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <form class="footer-news-letter">
+                        <h4>
+                            إشترك في القائمة البريدية ليصلك كل جديدنا
+                        </h4>
+                        <div class="form-group d-flex">
+                            <label for="emailNewsLetter" class="sr-only">البريد الإلكتروني</label>
+                            <input type="email" id="emailNewsLetter" name="" class="form-control"
+                                placeholder="example@email.com" />
+                            <button type="submit" name="" class="btn btn-light d-block"><i
+                                    class="fa fa-paper-plane fa-fw"></i> إشتراك</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy-rights text-center position-relative" style="z-index: 99;">
+            <div class="container">
+                <p>جميع الحقوق محفوطة :المرشد لتحديد الميول "متم" © 2020</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer main -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/vendor/jquery.min.js"></script>
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+    <script src="assets/libs/animate/wow.min.js"></script>
+    <script src="assets/libs/owl/owl.carousel.min.js"></script>
+    <script src="assets/libs/lozad.js-master/dist/lozad.min.js"></script>
+    <script src="assets/libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
