@@ -181,4 +181,36 @@ $(document).ready(function () {
     const observer = lozad(); 
     observer.observe();
     $('[data-toggle="tooltip"]').tooltip();
+
+    $('[data-toggle="popover"]').popover();
+
+
+    $('#pills-tab li a').on('show.bs.tab', function (e) {
+        // alert('jih');
+        
+        console.log(e.target.hash + " #defaultOpen"); 
+        $(e.target.hash + " .tablinks:first-child").addClass('active');
+        $(e.target.hash + ' .tabcontent').first().addClass('shown')
+        // document.getElementById(e.target.hash).style.display = "block";
+    })
+
 });
+
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove('shown');
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).classList.add('shown');
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen1").click();

@@ -1,0 +1,138 @@
+.image-header {
+    right: -1px;
+    left: auto;
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+}
+
+.mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important
+}
+
+.ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important
+}
+
+.why-item figure {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.news-block-one .inner-box .lower-content .post-date i {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.footer-news-letter button {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.user-form label {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    right: 10px;
+    left: auto;
+}
+
+.copun button {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.container-rad {
+    padding-left: 30px ;
+    padding-right: 0;
+}
+
+.copun .d-flex > label {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.action-btns .continue-pay {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.chat-item.media figure {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.chat-item.media .media-body::before {
+    left: -8px;
+    right: auto;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.chat-item.media .media-body span {
+    text-align: right
+}
+
+.chat-item.media.resever figure {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.chat-item.media.resever .media-body::before {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    right: -8px;
+    left: auto;
+}
+
+#content_block_09 .content-box #contact-form .form-group label i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.code-holder {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.cont-img {
+    margin-right: 0 !important;
+    margin-left: 30px;
+}
+
+#content_block_09 .content-box #contact-form:before{
+    left: 20px;
+    right: 0;
+}
+
+.exam-question .card-body .container-rad {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.faq-item h5::after {
+    right: 0;
+    left: auto;
+}
+
+.package-details ul li::before {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.media-news figure {
+    margin-left: 0;
+    margin-right: 15px;
+}
