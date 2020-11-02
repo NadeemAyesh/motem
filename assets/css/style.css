@@ -3707,6 +3707,29 @@ a.more-link {
     top: 18px
 }
 
+
+.cat-list {
+    padding: 20px 18px;
+}
+
+.cat-list h4 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.cat-list ul li {
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.compareModal .new-pkg-item {
+    border-radius: 0;
+    height: 100%;
+}
+
 /* Media query */
 
 @media (min-width: 1366px) {}
