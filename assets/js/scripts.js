@@ -192,8 +192,21 @@ $(document).ready(function () {
         $(e.target.hash + " .tablinks:first-child").addClass('active');
         $(e.target.hash + ' .tabcontent').first().addClass('shown')
         // document.getElementById(e.target.hash).style.display = "block";
-    })
+    });
 
+    $('.example-popover:not(.inmodal)').click(function () {
+        $('#backdrop').toggleClass('modal-backdrop in');
+    });
+
+    $(document).on('click', '.modal-backdrop', function (event) {
+        $('.modal-backdrop').toggleClass('modal-backdrop in');
+        // console.log($(event.target))
+        // if (!$(event.target).closest('.example-popover').length) {
+        //     $('#backdrop').toggleClass('modal-backdrop in');
+        // }
+    });
+
+    // $('.example-popover').popover('show')
 });
 
 

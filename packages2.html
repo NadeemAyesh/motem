@@ -244,7 +244,7 @@
                                         <input id="c1" type="checkbox" class="check-me-input">
                                     </div>
                                     <div class="title-pkg">
-                                        <h4>star</h4>
+                                        <h4><i class="fa fa-star fa-fw"></i></h4>
                                         <h5>Category</h5>
                                         <p>Starting from</p>
                                         <div class="pkg-price stroked">
@@ -255,7 +255,7 @@
                                     <ul class="list-unstyled">
                                         <li>
                                             <h6>
-                                                Report Name <a data-html="true" tabindex="0" class="example-popover" role="button" data-toggle="popover"
+                                                Report Name <a data-html="true" tabindex="0" class="example-popover inmodal" role="button" data-toggle="popover"
                                                     data-trigger="focus" data-content="<div class='popover-me text-center' style='display: none;'>
                                                                                     <i class='fa fa-file-alt fa-fw'></i>
                                                                                     <p>Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit amet lectus
@@ -286,7 +286,7 @@
                                         <input id="c1" type="checkbox" class="check-me-input">
                                     </div>
                                     <div class="title-pkg">
-                                        <h4>star</h4>
+                                        <h4><i class="fa fa-star fa-fw"></i></h4>
                                         <h5>Category</h5>
                                         <p>Starting from</p>
                                         <div class="pkg-price stroked">
@@ -362,14 +362,18 @@
 
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-packages" role="tabpanel" aria-labelledby="pills-packages-tab">
-                    <div class="tab d-flex justify-content-center nav-justified myCustomNav">
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="tab d-flex justify-content-center nav-justified myCustomNav">
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                            </div>
+                        </div>
                     </div>
                     
                     <div id="London" class="tabcontent shown">
@@ -381,7 +385,7 @@
                                         <input id="c1" type="checkbox" class="check-me-input">
                                     </div>
                                     <div class="title-pkg">
-                                        <h4>star</h4>
+                                        <h4><i class="fa fa-star fa-fw"></i></h4>
                                         <h5>Category</h5>
                                         <p>Starting from</p>
                                         <div class="pkg-price stroked">
@@ -403,7 +407,7 @@
                                                 </div>">Preview</a>
                                                 
                                             </h6>
-                                            
+                                            <div id="backdrop"></div>
                                             <p>In consequat, quam id sodales hendrerit,eros mi molestie leo, nec lacinia.</p>
                                         </li>
                                     </ul>
@@ -413,9 +417,9 @@
                                         <a href="" class="btn btn-link btn-block text-dark mt-2"><i class="fa fa-phone fa-fw"></i> Contact us to get quote</a>
                                     </div>
                                 </article>
-                                <div class="text-center">
+                                <!-- <div class="text-center">
                                     <a href="" class="btn btn-link mt-1" style="color: #34AAF2;"><i class="fa fa-eye fa-fw"></i> See Details</a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="col-lg-3 col-sm-6">
                                 <article class="new-pkg-item green-pkg">
@@ -424,7 +428,7 @@
                                         <input id="c1" type="checkbox" class="check-me-input">
                                     </div>
                                     <div class="title-pkg">
-                                        <h4>star</h4>
+                                        <h4><i class="fa fa-star fa-fw"></i></h4>
                                         <h5>Category</h5>
                                         <p>Starting from</p>
                                         <div class="pkg-price">
@@ -444,9 +448,9 @@
                                         <a href="" class="btn btn-link btn-block text-dark mt-2"><i class="fa fa-phone fa-fw"></i> Contact us to get quote</a>
                                     </div>
                                 </article>
-                                <div class="text-center">
+                                <!-- <div class="text-center">
                                     <a href="" class="btn btn-link mt-1" style="color: #34AAF2;"><i class="fa fa-eye fa-fw"></i> See Details</a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="col-lg-3 col-sm-6">
                                 <article class="new-pkg-item orange-pkg">
@@ -455,7 +459,7 @@
                                         <input id="c1" type="checkbox" class="check-me-input">
                                     </div>
                                     <div class="title-pkg">
-                                        <h4>star</h4>
+                                        <h4><i class="fa fa-star fa-fw"></i></h4>
                                         <h5>Category</h5>
                                         <p>Starting from</p>
                                         <div class="pkg-price">
@@ -475,9 +479,9 @@
                                         <a href="" class="btn btn-link btn-block text-dark mt-2"><i class="fa fa-phone fa-fw"></i> Contact us to get quote</a>
                                     </div>
                                 </article>
-                                <div class="text-center">
+                                <!-- <div class="text-center">
                                     <a href="" class="btn btn-link mt-1" style="color: #34AAF2;"><i class="fa fa-eye fa-fw"></i> See Details</a>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="col-lg-3 col-sm-6">
                                 <article class="new-pkg-item red-pkg">
@@ -486,7 +490,7 @@
                                         <input id="c1" type="checkbox" class="check-me-input">
                                     </div>
                                     <div class="title-pkg">
-                                        <h4>star</h4>
+                                        <h4><i class="fa fa-star fa-fw"></i></h4>
                                         <h5>Category</h5>
                                         <p>Starting from</p>
                                         <div class="pkg-price">
@@ -506,9 +510,9 @@
                                         <a href="" class="btn btn-link btn-block text-dark mt-2"><i class="fa fa-phone fa-fw"></i> Contact us to get quote</a>
                                     </div>
                                 </article>
-                                <div class="text-center">
+                                <!-- <div class="text-center">
                                     <a href="" class="btn btn-link mt-1" style="color: #34AAF2;"><i class="fa fa-eye fa-fw"></i> See Details</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -526,14 +530,18 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-individuals" role="tabpanel" aria-labelledby="pills-individuals-tab">
-                    <div class="tab d-flex justify-content-center nav-justified myCustomNav">
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Hold')" id="defaultOpen1">London</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Boland')">Paris</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Noland')">Tokyo</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Roman')">Paris</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
-                        <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="tab d-flex justify-content-center nav-justified myCustomNav">
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Hold')" id="defaultOpen1">London</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Boland')">Paris</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Noland')">Tokyo</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Roman')">Paris</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Paris')">Paris</button>
+                                <button class="tablinks btn btn-light" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="Hold" class="tabcontent shown">
@@ -545,7 +553,7 @@
                                         <input id="c1" type="checkbox" class="check-me-input">
                                     </div>
                                     <div class="title-pkg">
-                                        <h4>star</h4>
+                                        <h4><i class="fa fa-star fa-fw"></i></h4>
                                         <h5>Category</h5>
                                         <p>Starting from</p>
                                         <div class="pkg-price">

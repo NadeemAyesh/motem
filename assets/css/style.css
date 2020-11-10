@@ -1468,6 +1468,7 @@ box-shadow: 0px 0px 7px -3px rgba(0,0,0,0.75);
 
 .packages-bg {
     background: linear-gradient(to right, #40B6F6, #259CEF);
+    padding-bottom: 0;
 }
 
 .packages-bg h1,
@@ -1477,6 +1478,10 @@ box-shadow: 0px 0px 7px -3px rgba(0,0,0,0.75);
 
 .packages-bg h1::after {
     background-color: #FFF;
+}
+
+.packages-bg #pills-tab {
+    margin-bottom: 0 !important;
 }
 /* inner-header */
 
@@ -3341,6 +3346,8 @@ a.more-link {
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: #FFF;
     color: #36ADF3;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #nav-tab {
@@ -3398,7 +3405,7 @@ a.more-link {
     background-color: #1B4E9B;
     color: #FFF;
     font-size: 13px;
-    padding: 5px 12px;
+    padding: 3px 12px;
     border-top-right-radius: 10px;
 }
 
@@ -3413,7 +3420,7 @@ a.more-link {
 
 .title-pkg h5 {
     color: #3E3E3E;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .title-pkg p {
@@ -3424,7 +3431,7 @@ a.more-link {
 
 .pkg-price {
     color: #1B4E9B;
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'bold', 'main', sans-serif;
 }
 
@@ -3434,6 +3441,7 @@ a.more-link {
 
 .new-pkg-item ul {
     margin-top: 20px;
+    flex: 1 1 auto;
 }
 
 .new-pkg-item ul li {
@@ -3467,6 +3475,10 @@ a.more-link {
 .pkg-btn {
     border: none !important;
     padding: 8px 30px;
+}
+
+.new-pkg-item .btn.btn-block i {
+    transform: rotate(90deg);
 }
 /* new-pkg-item */
 
@@ -3569,7 +3581,7 @@ a.more-link {
 	}
 
 	input[type='checkbox'].check-me-input:not(.switch) {
-		border-radius: 7px;
+		border-radius: 5px;
 	}
 
 	input[type='checkbox'].check-me-input:not(.switch):after {
@@ -3689,6 +3701,16 @@ a.more-link {
     color: #000000;
     font-size: 16px;
 }
+
+.white-bg-pkg .btn {
+    padding: 8px 25px;
+    margin: 0 5px;
+}
+
+.white-bg-pkg .btn.btn-light {
+    color: #34AAF2 !important;
+    border-color: #34AAF2 !important;
+}
 /* white-bg-pkg */
 
 /* Popup container - can be anything you want */
@@ -3709,13 +3731,14 @@ a.more-link {
 
 
 .cat-list {
-    padding: 20px 18px;
+    padding: 20px 18px 20px 35px;
 }
 
 .cat-list h4 {
     font-size: 18px;
     color: black;
     margin-bottom: 20px;
+    margin-top: 34px;
 }
 
 .cat-list ul li {
@@ -3728,8 +3751,21 @@ a.more-link {
 .compareModal .new-pkg-item {
     border-radius: 0;
     height: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
+
+#backdrop {
+    background-color: RGBA(0, 0, 0, .76);
+}
+
+.popover-body {
+    width: 255px !important;
+    height: 380px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 /* Media query */
 
 @media (min-width: 1366px) {}
