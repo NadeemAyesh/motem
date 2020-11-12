@@ -207,6 +207,14 @@ $(document).ready(function () {
     });
 
     // $('.example-popover').popover('show')
+
+    $(".fab-btn").tooltip('show');
+    $('.red-tooltip').on('click', function () {
+        $('.fab-select').slideDown();
+        $('.close-select').on('click', function () {
+            $('.fab-select').slideUp();
+        })
+    })
 });
 
 
