@@ -3948,6 +3948,10 @@ a.more-link {
     .inner-header {
         padding-bottom: 0 !important;
     }
+
+    .tabcontent .row [class*=col] {
+        margin-bottom: 25px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -4093,6 +4097,22 @@ a.more-link {
     .side-menu.show {
         width: 90%;
     }
+
+    .myCustomNav {
+        flex-wrap: wrap;
+    }
 }
 
+@media(max-width: 425px) {
+    .fab-select {
+        width: 100%;
+        /* margin-left: 5%;
+        margin-right: 0; */
+    }
+
+    .fab-consult {
+        /* padding-right: 20px; */
+        width: 80%;
+    }
+}
 /* Media query */
