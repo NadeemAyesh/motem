@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/libs/flag-icon-css-master/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/libs/owl/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css?v=1.0">
-    <!-- <link rel="stylesheet" href="assets/css/style-rtl.css"> -->
+    <link rel="stylesheet" href="assets/css/style-ltr.css">
 
 </head>
 
@@ -180,9 +180,9 @@
 
     <!-- main-header -->
     <header class="main-header inner-header">
-        <nav class="navbar navbar-expand-lg navbar-light main-navigation fadeInUp wow animated"
+        <nav class="navbar navbar-expand-lg navbar-light main-navigation fadeInUp wow animated py-0"
             data-wow-duration="1.2s">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/logo-inner.png" alt="Logo" title="المرشد لوجو وشعار المنتج" />
                 </a>
@@ -191,8 +191,6 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                    </ul>
                     <ul class="navbar-nav ml-auto white-text">
                         <li class="nav-item active">
                             <!-- <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a> -->
@@ -209,6 +207,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">حولنا</a>
                         </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto white-text">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
@@ -238,9 +238,33 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target=".login-register">
-                                <i class="far fa-user-circle"></i>
-                                دخول</a>
+                            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24.444" height="20" viewBox="0 0 24.444 20">
+                                    <defs>
+                                        <style>
+                                            .a-cart {
+                                                fill: url(#a);
+                                            }
+                                        </style>
+                                        <linearGradient id="a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+                                            <stop offset="0" stop-color="#40b6f6" />
+                                            <stop offset="1" stop-color="#259cef" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path class="a-cart"
+                                        d="M2.833,6a.833.833,0,1,0,0,1.667H4.364a.826.826,0,0,1,.818.677l.166.868L7.14,18.62a3.621,3.621,0,0,0,3.548,2.935h10.4a3.62,3.62,0,0,0,3.548-2.935l1.791-9.409a.833.833,0,0,0-.818-.99H6.856l-.036-.19A2.509,2.509,0,0,0,4.364,6Zm4.34,3.889H24.6L23,18.309a1.936,1.936,0,0,1-1.911,1.58h-10.4a1.937,1.937,0,0,1-1.911-1.58h0ZM12,22.667a1.667,1.667,0,1,0,1.667,1.667A1.667,1.667,0,0,0,12,22.667Zm7.778,0a1.667,1.667,0,1,0,1.667,1.667A1.667,1.667,0,0,0,19.778,22.667Z"
+                                        transform="translate(-2 -6)" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary login-sign-up-btns" href="#" data-toggle="modal" data-target=".login-register" data-tab-show="#login">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link btn btn-primary text-white login-sign-up-btns" href="#" data-toggle="modal" data-target=".login-register" data-tab-show="#profile">
+                                Login
+                            </a>
                         </li>
                     </ul>
                 </div>
